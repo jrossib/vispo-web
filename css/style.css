@@ -14,7 +14,9 @@
 }
 
 
-
+html, body {
+  overflow-x: hidden;
+}
 
 header {
             
@@ -38,21 +40,14 @@ a{
     
 }
 
+
+
 .iconos img {
     max-width: 4rem;
     height: auto;
 }
 
-.documental-vispo {
-    width: 100%;
-    height: 37.5rem;
-    background-image:url(../images/bannerppal.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
+
 
 .foto-cita {
     width: 18.75rem;
