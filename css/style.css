@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -13,38 +17,95 @@
   font-style: normal;
 }
 
-
-html, body {
-  overflow-x: hidden;
+header {           
+    background-image: url(../assets/fondo-olas.svg);
+    background-size: cover;
+    overflow: hidden;
 }
 
-header {
-            
-    background-image: url(../assets/fondo-olas.svg);        
-}
+header img {
+  max-height: 6.25rem; 
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  }
 
-li{
+li {
     list-style: none;
+    letter-spacing: 0.2rem;
+    font-size: .875rem;
 }
 
-nav{
-    padding-top: 3rem;
-}
-
-button{
-    margin-top: 1.875rem;
-}
-a{
+li a {
     text-decoration: none;
     color: white;
-    
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: .875rem;
+    letter-spacing: 0.2rem ;
+    background-color: #a8cbf3;
+    border-radius: 1.875rem;
+    border: solid 1px white;
+    height: 2.5rem;
+    width: 6.25rem;
+    cursor: pointer;
+    padding: .25rem .9375rem;
+}
 
+.boton-documental {
+    font-size: 0.875rem;
+    letter-spacing: 0.2rem;
+    color: rgb(255, 255, 255);
+    background-color: #a1a1a1;
 
-.iconos img {
-    max-width: 4rem;
-    height: auto;
+}
+
+.banner-documental {
+    padding-top: 3.125rem;
+}
+
+@media (max-width: 768px) {
+  .banner-documental {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-documental {
+    padding-top: 200px; 
+  }
+}
+
+.foto-vispo-v {
+    object-fit: cover;
+    object-position: left;
+}
+
+.bg-celeste {
+    background-color: #a3d9ff
+}
+
+.ancho-parrafo {
+width: 80%;
+}
+
+@media (max-width: 1024px) {
+  .ancho-parrafo {
+   width: 100%;
+  }
+}
+
+.boton-galeria {
+    font-size: 0.875rem;
+    letter-spacing: 0.2rem;
+    color: rgb(55, 142, 201);
+    background-color: #e2efff;
 }
 
 
@@ -75,24 +136,13 @@ a{
     line-height: 1;    
 }
 
-article {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    width: 60%;
-    height: 25rem;
-    margin: 3.125rem auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6.25rem 12.5rem 6.25rem;
-    background-color: rgb(146, 190, 240);
-    border-radius: 3.125rem 0rem 3.125rem 0rem;
+.logo-footer {
+    width: 12.5rem;
 }
 
-
-.bg-celeste {
-    background-color: #a3d9ff
+/*
+.iconos img {
+    max-width: 4rem;
+    height: auto;
 }
-
-.ancho-parrafo {
-width: 60%;
-}
+    */
