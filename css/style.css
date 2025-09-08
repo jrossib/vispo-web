@@ -17,6 +17,7 @@ html, body {
   font-style: normal;
 }
 
+
 header {           
     background-image: url(../assets/fondo-olas.svg);
     background-size: cover;
@@ -119,6 +120,19 @@ width: 80%;
 @media (max-width: 1024px) {
   .ancho-parrafo {
    width: 100%;
+  }
+}
+
+article {
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 3rem 0rem 1rem 0rem;
+    text-align: center;    
+}
+
+@media (max-width: 1024px) {
+  article {
+    max-width: 90%;; 
   }
 }
 
